@@ -1,0 +1,20 @@
+body {
+	margin: 0; 
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	background-color: #ddd;
+	padding: 8px; 
+}
+
+.nav div {
+	margin-right: 15px;
+}
+
+.nav div a {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
