@@ -3,18 +3,134 @@ body {
 }
 
 .nav {
-	display: flex;
-	align-items: center;
-	background-color: #ddd;
-	padding: 8px; 
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid lightgrey;
 }
 
-.nav div {
-	margin-right: 15px;
-}
-
-.nav div a {
-	font-size: 20px;
-	text-decoration: none;
+.nav__logo {
+	font-family: 'Great Vibes', cursive;
+	font-size: 36px;
 	color: black;
+	letter-spacing: 1.5px;
+	text-decoration: none;
 }
+
+.nav__item {
+	display: none;
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	color: black;
+	letter-spacing: 1.25px;
+}
+
+.nav__item__mobile:not(:last-child) {
+	border-bottom: 1px solid lightgrey;
+}
+
+.nav__item:hover, .nav__logo:hover {
+	text-decoration: none;
+}
+
+.nav__hamburger-menu {
+	display: inline;
+	float: right;
+	margin-right: 3%;
+	margin-top: 15px; 
+	color: black;		
+	font-size: 20px;
+}
+
+@media screen and (min-width: 425px) {
+	.nav__logo {
+		font-size: 30px; 
+	}
+
+	.nav__item {
+		font-size: 20px;
+	}
+
+	.nav__hamburger-menu {
+		margin-top: 7px; 
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.nav {
+		display: -webkit-box;
+        display: -ms-flexbox;
+  		display: flex;
+  		-webkit-box-align: center;
+      	-ms-flex-align: center;
+          align-items: center;
+  		-webkit-box-pack: space-around;
+      	-ms-flex-pack: space-around;
+          justify-content: space-around;
+  		border-bottom: 1px solid lightgrey;
+		padding: 5px 5px 0 5px; 
+	}
+
+	.nav__hamburger-menu {
+		display: none;
+	}
+
+	.nav__logo {
+		font-size: 36px; 
+	}
+
+	.nav__item {
+		display: inline;
+		font-size: 24px;
+	}
+}
+
+
+/* Main Page */
+
+.main-page-hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.mp-hero__img, .mp-hero__copy__img-map {
+	width: 100%;
+}
+
+.mp-hero__wedding-info {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 8px;
+	border-radius: 8px; 
+	background-color: white;
+	width: 500px;
+	max-width: 500px;
+	text-align: center;
+	opacity: .9;
+	z-index: 1;
+}
+
+@media screen and (min-width: 1200px) {
+	.mp-hero__wedding-info {
+		top: 40%
+	}
+}
+
+.mp-hero__wedding-info h3 {
+
+}
+
+.mp-hero__wedding-info p {
+
+}
+
+.mp-hero__copy__img-map {
+	margin: 0 auto;
+	opacity: 1;
+}
+
+
+
+
+

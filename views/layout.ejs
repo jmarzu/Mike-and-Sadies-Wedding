@@ -2,18 +2,24 @@
 <html>
 <head>
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<title>Mike and Sadie's Wedding</title>
 </head>
 <body>
-	<div class="nav">
-		<div><a href="/">M + S</a></div>
-		<div><a href="/directions">Directions</a></div>
-		<div><a href="/reservations">Reservations</a></div>
-	</div>
+    <div class="nav">
+      <a class="icon nav__hamburger-menu" id="HBmenu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a class="nav__logo" href="/">Mike and Sadie</a>
+      <a class="nav__item" href="/directions">Directions</a>
+      <a class="nav__item" href="/reservations">Reservations</a>
+    </div>
 
 	<%- body %>
 
+<script type="text/javascript" src="bundle.js"></script>
 </body>
 </html>
