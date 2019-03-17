@@ -38,4 +38,4 @@ npm install
 ``` 
 to install all dependencies. 
 
-6. Run `nodemon`. If there are no errors then you should see the site at localhost:3000.
+6. Run `npm start` and go to http://localhost:3000/.
