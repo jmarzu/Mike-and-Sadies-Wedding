@@ -29,6 +29,8 @@ app.get('/reservations', function(rec, res) {
 	res.render('reservations');
 });
 
+console.log('yeah');
+
 var server = app.listen(process.env.PORT || 3000);
 
 module.exports = server;
